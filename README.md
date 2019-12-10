@@ -83,4 +83,7 @@
 (define (bubble-loop n s)
 	(cond ((= n 1) (bubble s))
 	(else (bubble-loop (- n 1) (bubble s)))))
+
+예시
+(bubble-loop (length (union '(7 8 9) '(1 4 7))) (union '(7 8 9) '(1 4 7)))
 ```
