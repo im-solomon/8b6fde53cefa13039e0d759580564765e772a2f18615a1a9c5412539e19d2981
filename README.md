@@ -73,7 +73,7 @@
 	((n (car s)) (cons (car s) (filter (cdr s) n)))
 	(else (filter (cdr s) n))))
 ```
-![6.filte2r](/img/6.filter.PNG)
+![6.filter](/img/6.filter_.PNG)
 
 ### 추가 공부
 
