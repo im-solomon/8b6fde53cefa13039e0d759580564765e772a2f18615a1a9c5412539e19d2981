@@ -68,6 +68,19 @@
 	((n (car s)) (cons (car s) (filter (cdr s) n)))
 	(else (filter (cdr s) n))))
 ```
+### 추가 공부
 
 * (define bubble-loop n s) ...);
-  
+  - set s의 원소를 오름차순으로 버블 정렬하는 함수, set 타입 반환
+```scheme
+(define (bubble s)
+ (if (is-empty? (cdr s)) s
+	(cond
+	  ((< (car s) (cadr s)) (cons (car s) (bubble (cdr s))))
+	  (else (cons (cadr s) (bubble (cons (car s) (cddr s) )))))))
+	
+	
+(define (bubble-loop n s)
+	(cond ((= n 1) (bubble s))
+	(else (bubble-loop (- n 1) (bubble s)))))
+```
