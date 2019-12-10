@@ -1,4 +1,5 @@
 # 프로그래밍 언어론 과제 2
+#
 ### List를 써서 Set을 구현, 다음 함수를 Scheme으로 구현하시오. x는 int 타입의 숫자를 s, s1, s2등은 Set 타입의 개체를 나타낸다.  
 
 * (define (contains? x s) ...._) ; 결과는 boolean
@@ -9,7 +10,7 @@
 * (define (filter s p) ...) ; p는 int를 받아서 boolean을 리턴하는 함수, 결과는 Set
 
 ### 함수 설명 및 소스 코드
-
+#
 * (define (contains? x s) ...._) ;
   - set s에 int x가 포함되어 있는지 확인, boolean 타입 반환
 ```scheme
@@ -21,21 +22,20 @@
 ```
 ![1.contains](/img/1.contains.PNG)  
 #
-#
 * (define (is-empty? s) ...._) ;
   - set s가 비어있는지 확인, boolean 타입 반환
 ```scheme
 (define (is-empty? s) (null? s))
 ```
 ![2.is-empty](/img/2.is-empty.PNG)
-
+#
 * (define (singleton-set x) ...) ;
   - int x를 set으로 변환, set 타입 반환
 ```scheme
 (define (singleton-set x) (cons x '()))
 ```
 ![3.singleton-set](/img/3.singleton-set.PNG)
-
+#
 * (define (intersection s1 s2) ...) ;
   - set s1을 기준으로 set s2와 비교하여 공통된 값 출력, set타입 반환
 ```scheme
@@ -47,7 +47,7 @@
 	(else (intersection (cdr s1) s2))))
 ```
 ![4.intersection](/img/4.intersection.PNG)
-
+#
 * (define (union s1 s2) ...) ;
   - set s, set 타입 반환
 ```scheme
@@ -59,7 +59,7 @@
 		(else  (cons (car s1) (union (cdr s1) s2)))))
 ```
 ![5.union](/img/5.union.PNG)
-
+#
 * (define (filter s p) ...) ;
   - set s에 x가 포함되어 있는지 확인하는 함수, set 타입 반환
 ```scheme
@@ -75,7 +75,7 @@
 	(else (filter (cdr s) n))))
 ```
 ![6.filter](/img/6.filter_.PNG)
-
+#
 ### 추가 공부
 
 * (define bubble-loop n s) ...);
