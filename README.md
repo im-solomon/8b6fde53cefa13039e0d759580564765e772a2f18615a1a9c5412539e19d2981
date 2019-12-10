@@ -18,7 +18,7 @@
 		((null? s) #f)
 		((eq? x (car s)) #t)
 		(else (contains? x (cdr s)))))
-```		
+	
 		
 
 * (define (is-empty? s) ...._) ;
