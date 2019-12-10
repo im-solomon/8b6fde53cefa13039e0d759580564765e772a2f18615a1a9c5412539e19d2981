@@ -12,7 +12,7 @@
 
 * (define (contains? x s) ...._) ;
   - set s에 int x가 포함되어 있는지 확인, boolean 타입 반환
-  ```c
+  ```
   (define (contains? x s)
 	( cond
 		((null? s) #f)
