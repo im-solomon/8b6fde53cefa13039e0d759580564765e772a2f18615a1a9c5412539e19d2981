@@ -22,16 +22,44 @@
 
 * (define (is-empty? s) ...._) ;
   - set s가 비어있는지 확인, boolean 타입 반환
-  
+```
+(define (is-empty? s) (null? s))
+```
+
 * (define (singleton-set x) ...) ;
   - int x를 set으로 변환, set 타입 반환
-  
+```
+(define (singleton-set x) (cons x '()))
+```
+
 * (define (intersection s1 s2) ...) ;
   - set s1을 기준으로 set s2와 비교하여 공통된 값 출력, set타입 반환
-  
+```
+(define (intersection s1 s2)
+	(cond
+		((is-empty? s1) '())
+		((is-empty? s2) '())
+		((contains? (car s1) s2) (cons (car s1) (intersection (cdr s1) s2)))
+		(else (intersection (cdr s1) s2))))
+```
+
 * (define (union s1 s2) ...) ;
   - set s, set 타입 반환
-  
+```
+(define (union s1 s2)
+	(cond
+		((is-empty? s1) s2)
+		((is-empty? s2) '())
+		((contains? (car s1) s2) (union (cdr s1) s2))
+		(else  (cons (car s1) (union (cdr s1) s2))   )))
+```
+
 * (define (filter s p) ...) ;
   - set s에 x가 포함되어 있는지 확인하는 함수, set 타입 반환
+```scheme
+(define (mod_3 n)
+	(cond
+		((= 0 (modulo n 3)) #t)
+		(else #f)))
+```
   
