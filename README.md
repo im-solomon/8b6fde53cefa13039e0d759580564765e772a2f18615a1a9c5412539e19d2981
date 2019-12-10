@@ -20,7 +20,7 @@
 		(else (contains? x (cdr s)))))
 ```
 ![1.contains](/img/1.contains.PNG)  
-  
+#
 * (define (is-empty? s) ...._) ;
   - set s가 비어있는지 확인, boolean 타입 반환
 ```scheme
