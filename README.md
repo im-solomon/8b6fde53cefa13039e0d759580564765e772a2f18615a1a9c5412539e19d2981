@@ -12,14 +12,13 @@
 
 * (define (contains? x s) ...._) ;
   - set s에 int x가 포함되어 있는지 확인, boolean 타입 반환
-  ```
+```
   (define (contains? x s)
 	( cond
 		((null? s) #f)
 		((eq? x (car s)) #t)
 		(else (contains? x (cdr s)))))
-	
-		
+```
 
 * (define (is-empty? s) ...._) ;
   - set s가 비어있는지 확인, boolean 타입 반환
