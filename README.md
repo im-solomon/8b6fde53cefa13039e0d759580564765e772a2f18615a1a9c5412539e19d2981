@@ -11,10 +11,25 @@
 ### 함수 설명 및 소스 코드
 
 * (define (contains? x s) ...._) ;
-  - set s에 x가 포함되어 있는지 확인하는 함수, boolean 값 반환
+  - set s에 int x가 포함되어 있는지 확인, boolean 타입 반환
+  (define (contains? x s)
+	( cond
+		((null? s) #f)
+		((eq? x (car s)) #t)
+		(else (contains? x (cdr s)))))
 
 * (define (is-empty? s) ...._) ;
+  - set s가 비어있는지 확인, boolean 타입 반환
+  
 * (define (singleton-set x) ...) ;
+  - int x를 set으로 변환, set 타입 반환
+  
 * (define (intersection s1 s2) ...) ;
+  - set s1을 기준으로 set s2와 비교하여 공통된 값 출력, set타입 반환
+  
 * (define (union s1 s2) ...) ;
+  - set s, set 타입 반환
+  
 * (define (filter s p) ...) ;
+  - set s에 x가 포함되어 있는지 확인하는 함수, set 타입 반환
+  
