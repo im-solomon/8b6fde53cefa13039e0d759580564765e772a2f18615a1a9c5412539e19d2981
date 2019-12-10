@@ -61,5 +61,13 @@
 	(cond
 		((= 0 (modulo n 3)) #t)
 		(else #f)))
+
+(define (filter s n)
+	(cond
+	((is-empty? s) '())
+	((n (car s)) (cons (car s) (filter (cdr s) n)))
+	(else (filter (cdr s) n))))
 ```
+
+* (define bubble-loop n s) ...);
   
