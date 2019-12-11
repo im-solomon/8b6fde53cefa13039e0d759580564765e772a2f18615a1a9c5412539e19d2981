@@ -10,8 +10,7 @@
 * (define (filter s p) ...) ; p는 int를 받아서 boolean을 리턴하는 함수, 결과는 Set
 
 ### 함수 설명 및 소스 코드
-
-
+-----------
 * (define (contains? x s) ...._) ;
   - set s에 int x가 포함되어 있는지 확인, boolean 타입 반환
 ```scheme
