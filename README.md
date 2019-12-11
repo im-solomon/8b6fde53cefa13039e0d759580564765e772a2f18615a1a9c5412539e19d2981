@@ -65,7 +65,7 @@
 #
 
 * (define (filter s p) ...) ;
-  - set s에 x가 포함되어 있는지 확인하는 함수, set 타입 반환
+  - set s에 p함수를 적용시키는 함수, set 타입 반환
 ```scheme
 (define (mod_3 n)
 	(cond
