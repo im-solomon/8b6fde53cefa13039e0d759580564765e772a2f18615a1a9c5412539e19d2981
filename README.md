@@ -20,13 +20,15 @@
 		(else (contains? x (cdr s)))))
 ```
 ![1.contains](/img/1.contains_1.png)  
+#
 
 * (define (is-empty? s) ...._) ;
   - set s가 비어있는지 확인, boolean 타입 반환
 ```scheme
 (define (is-empty? s) (null? s))
 ```
-![2.is-empty](/img/2.is-empty_1.PNG)
+![2.is-empty](/img/2.is-empty_1.png)
+#
 
 * (define (singleton-set x) ...) ;
   - int x를 set으로 변환, set 타입 반환
@@ -34,6 +36,7 @@
 (define (singleton-set x) (cons x '()))
 ```
 ![3.singleton-set](/img/3.singleton-set_1.png)
+#
 
 * (define (intersection s1 s2) ...) ;
   - set s1을 기준으로 set s2와 비교하여 공통된 값 출력, set타입 반환
@@ -46,6 +49,7 @@
 	(else (intersection (cdr s1) s2))))
 ```
 ![4.intersection](/img/4.intersection_1.png)
+#
 
 * (define (union s1 s2) ...) ;
   - set s, set 타입 반환
@@ -58,6 +62,7 @@
 		(else  (cons (car s1) (union (cdr s1) s2)))))
 ```
 ![5.union](/img/5.union_1.png)
+#
 
 * (define (filter s p) ...) ;
   - set s에 x가 포함되어 있는지 확인하는 함수, set 타입 반환
@@ -74,6 +79,7 @@
 	(else (filter (cdr s) n))))
 ```
 ![6.filter](/img/6.filter_1.png)
+#
 
 ### 추가 공부
 
@@ -97,3 +103,4 @@
 ![7_1.bubble](/img/7_1.bubble.PNG)
 ![7_2.bubble-loop](/img/7_2.bubble-loop_1.png)
 ![7_3.bubble-loop_ex](/img/7_3.bubble-loop_ex.PNG)
+#
