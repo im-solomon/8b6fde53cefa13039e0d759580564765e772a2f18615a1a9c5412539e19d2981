@@ -52,7 +52,7 @@
 #
 
 * (define (union s1 s2) ...) ;
-  - set s, set 타입 반환
+  - set s1과 set s2의 원소를 합한 set 출력, set 타입 반환
 ```scheme
 (define (union s1 s2)
 	(cond
