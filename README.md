@@ -1,5 +1,5 @@
 프로그래밍 언어론 과제 2
-===========
+
 ### List를 써서 Set을 구현, 다음 함수를 Scheme으로 구현하시오. x는 int 타입의 숫자를 s, s1, s2등은 Set 타입의 개체를 나타낸다.  
 
 * (define (contains? x s) ...._) ; 결과는 boolean
